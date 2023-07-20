@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="diccionario-card">
+    <h1>Dictionary</h1>
+    <img src="data:image/png;base64,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"/>
+    <input class="text" id="searchInput" placeholder="Type the word here..">
+    <button class="waves-effect waves-light btn" onclick="searchWord()">Search</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
